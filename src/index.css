@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 103px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+}
+
+h4 {
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+h1,
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+}
+
+h3,
+h4,
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+/* limits characters per row to allow better readability */
+h1,
+h2,
+h3,
+h4,
+p {
+  @apply max-w-readable;
+}
